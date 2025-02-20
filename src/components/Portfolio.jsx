@@ -2,7 +2,7 @@ import React from "react";
 import leetcode from "../assets/portfolio/leetcode.webp";
 // import installNode from "../assets/portfolio/installNode.jpg";
 // import navbar from "../assets/portfolio/navbar.jpg";
-// import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import reactWeatherApp from "../assets/portfolio/weatherApp.png";
 // import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 // import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
@@ -11,11 +11,15 @@ const Portfolio = () => {
     {
       id: 1,
       src: leetcode,
+      demo: '',
+      code: 'https://github.com/JesilaRatnaprin/leetCode' 
     },
-    // {
-    //   id: 2,
-    //   src: reactParallax,
-    // },
+    {
+      id: 2,
+      src: reactWeatherApp,
+      demo: 'https://js-react-weather-app.netlify.app/',
+      code: 'https://github.com/JesilaRatnaprin/jesi-react-weather-app'
+    },
     // {
     //   id: 3,
     //   src: navbar,
@@ -48,18 +52,28 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demo, code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 grow h-3/4 w-full"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                {demo ? (
+                  <button 
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  onClick= {() => window.open(demo,"_blank")}>
+                    Demo
+                  </button>
+                ) : (
+                  ""
+                )}
+
+                <button 
+                className = {`${demo ? 'w-1/2' : 'w-full'} px-6 py-3 m-4 duration-200 hover:scale-105`}
+                //className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                onClick= {() => window.open(code,"_blank")}>
                   Code
                 </button>
               </div>

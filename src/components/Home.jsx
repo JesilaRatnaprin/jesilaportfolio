@@ -17,7 +17,7 @@ const Home = () => {
             I'm a Full Stack Web Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-          Fully committed to lifelong learning, I'm a Full-Stack Developer with a deep passion for JavaScript, React, and all things web development. 
+          Fully committed to lifelong learning, I'm a Full-Stack Web Developer with a deep passion for JavaScript, React, and all things web development. 
           The perfect blend of creativity, logic, and technology keeps me excited about building seamless digital experiences. 
           There’s always something new to learn, and that’s what drives my passion. When I’m not coding, you’ll find me baking, keeping fit, or exploring new places.
           </p>

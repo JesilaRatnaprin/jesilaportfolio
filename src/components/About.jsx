@@ -17,6 +17,9 @@ import teamcity from '../assets/teamcity.png'
 import jenkins from '../assets/jenkins.png'
 import azuredevops from '../assets/azuredevops.jpeg'
 import bitbucket from '../assets/bitbucket.png'
+import SonarQube from '../assets/sonarqubes.png'
+import GitLab from '../assets/gitlab.png'
+import NodeJS from '../assets/node.png'
 const About = () => {
   const techs = [
     {
@@ -60,6 +63,12 @@ const About = () => {
       src: angular,
       title: "Angular",
       style: "shadow-red-600",
+    },
+    {
+      id: 21,
+      src: NodeJS,
+      title: "Node JS",
+      style: "shadow-green-500",
     },
     {
       id: 8,
@@ -125,6 +134,18 @@ const About = () => {
       src: teamcity,
       title: "TeamCity",
       style: "shadow-teal-500",
+    },
+    {
+      id: 19,
+      src: GitLab,
+      title: "GitLab",
+      style: "shadow-orange-500",
+    },
+    {
+      id: 20,
+      src: SonarQube,
+      title: "SonarQube",
+      style: "shadow-sky-400",
     },
     
   ];
