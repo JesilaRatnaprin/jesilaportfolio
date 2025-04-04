@@ -1,12 +1,8 @@
 import React from "react";
-import leetcode from "../assets/portfolio/leetcode.webp";
-// import installNode from "../assets/portfolio/installNode.jpg";
-// import navbar from "../assets/portfolio/navbar.jpg";
-import reactWeatherApp from "../assets/portfolio/weatherApp.png";
-// import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-// import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import { portfolioImages } from "../assets/images";
 
 const Portfolio = () => {
+  const {leetcode, weatherapp, pitchify} = portfolioImages
   const portfolios = [
     {
       id: 1,
@@ -16,26 +12,16 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: reactWeatherApp,
+      src: weatherapp,
       demo: 'https://js-react-weather-app.netlify.app/',
       code: 'https://github.com/JesilaRatnaprin/jesi-react-weather-app'
     },
-    // {
-    //   id: 3,
-    //   src: navbar,
-    // },
-    // {
-    //   id: 4,
-    //   src: reactSmooth,
-    // },
-    // {
-    //   id: 5,
-    //   src: installNode,
-    // },
-    // {
-    //   id: 6,
-    //   src: reactWeather,
-    // },
+    {
+      id: 3,
+      src: pitchify,
+      demo: 'https://pitchify-delta.vercel.app/',
+      code: 'https://github.com/JesilaRatnaprin/pitchify'
+    },
   ];
 
   return (

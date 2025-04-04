@@ -1,26 +1,10 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import docker from "../assets/docker.png";
-import github from "../assets/github.png";
-import tailwind from "../assets/tailwind.png";
-import typescript from '../assets/typescript.png'
-import reduxlogo from '../assets/reduxlogo.png'
-import angular from '../assets/angular.png'
-import bootstrap from '../assets/bootstrap.png'
-import materialui from '../assets/materialui.png'
-import jest from '../assets/jest.png'
-import cypress from '../assets/cypress.png'
-import teamcity from '../assets/teamcity.png'
-import jenkins from '../assets/jenkins.png'
-import azuredevops from '../assets/azuredevops.jpeg'
-import bitbucket from '../assets/bitbucket.png'
-import SonarQube from '../assets/sonarqubes.png'
-import GitLab from '../assets/gitlab.png'
-import NodeJS from '../assets/node.png'
+import { skillImages } from "../assets/images";
+
 const About = () => {
+  const {html, css, javascript, typescript, react, redux, angular, nodejs, tailwind, bootstrap, materialui, jest, cypress,
+    bitbucket, github, gitlab, azuredevops, jenkins, docker, teamcity, sonarQube, shadcn, nextjs, zod, vercel
+  } = skillImages
   const techs = [
     {
       id: 1,
@@ -48,13 +32,13 @@ const About = () => {
     },
     {
       id: 5,
-      src: reactImage,
+      src: react,
       title: "React",
       style: "shadow-cyan-600",
     },
     {
       id: 6,
-      src: reduxlogo,
+      src: redux,
       title: "Redux",
       style: "shadow-purple-600",
     },
@@ -66,7 +50,7 @@ const About = () => {
     },
     {
       id: 21,
-      src: NodeJS,
+      src: nodejs,
       title: "Node JS",
       style: "shadow-green-500",
     },
@@ -137,17 +121,40 @@ const About = () => {
     },
     {
       id: 19,
-      src: GitLab,
+      src: gitlab,
       title: "GitLab",
       style: "shadow-orange-500",
     },
     {
       id: 20,
-      src: SonarQube,
+      src: sonarQube,
       title: "SonarQube",
       style: "shadow-sky-400",
     },
-    
+    {
+      id: 21,
+      src: nextjs,
+      title: "Next.js",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 22,
+      src: shadcn,
+      title: "Shadcn",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 23,
+      src: vercel,
+      title: "Vercel",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 24,
+      src: zod,
+      title: "Zod",
+      style: "shadow-blue-500",
+    },  
   ];
   return (
     <div
